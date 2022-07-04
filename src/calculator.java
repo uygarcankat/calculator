@@ -45,12 +45,22 @@ public class calculator {
 
             case "bölme":
 
-                int hesap4 = number1 / number2;
+                switch (number2) {
 
-                System.out.println(hesap4);
+                    case 0  :
 
-                break;
+                        System.out.println("Bir sayı sıfıra bölünemez");
 
+
+
+
+                        break;
+
+                    default:
+                        int hesap4 = number1 / number2 ;
+
+                        System.out.println(hesap4);
+                }
             default:
 
                 System.out.println("Lütfen başka bir operator deneyiniz");
